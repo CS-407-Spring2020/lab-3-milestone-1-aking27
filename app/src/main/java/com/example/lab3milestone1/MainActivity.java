@@ -1,10 +1,14 @@
 package com.example.lab3milestone1;
 
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +32,20 @@ public class MainActivity extends AppCompatActivity {
         DialogClass dialogClass = new DialogClass();
         dialogClass.show(getSupportFragmentManager(), "example dialog");
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.example_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionItemSelected(@NonNull MenuItem item){
+        switch(item.getItemId()){
+            default:return super.onOptionsItemSelected(item);
+        }
     }
 
 }
