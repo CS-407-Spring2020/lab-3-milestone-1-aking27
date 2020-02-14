@@ -1,7 +1,7 @@
 package com.example.lab3milestone1;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,14 +18,15 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                openDialog();
+//                openDialog();
             }
 
         });
     }
 
-    public void openDialog(){
-        
-    }
+//    public void openDialog(){
+//        DialogClass.dialogClass = new DialogClass();
+//
+//    }
 
 }
