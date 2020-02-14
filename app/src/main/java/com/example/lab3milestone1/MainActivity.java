@@ -18,15 +18,16 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-//                openDialog();
+                openDialog();
             }
 
         });
     }
 
-//    public void openDialog(){
-//        DialogClass.dialogClass = new DialogClass();
-//
-//    }
+    public void openDialog(){
+        DialogClass dialogClass = new DialogClass();
+        dialogClass.show(getSupportFragmentManager(), "example dialog");
+
+    }
 
 }
