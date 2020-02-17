@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    //@Override
-    public boolean onOptionItemSelected(@NonNull MenuItem item){
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item){
         switch(item.getItemId()){
             case R.id.item1:
                 Toast.makeText(this, "Item 1 selected", Toast.LENGTH_SHORT).show();
